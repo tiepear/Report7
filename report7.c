@@ -2,8 +2,8 @@
 
 
 
-void print_array(int array[], int size);
-void print_array(int array[], int size){
+void display(int array[], int size);
+void display(int array[], int size){
     //printf("scores = ");
     for(int k = 0 ; k < size ; k++){
         printf("%d ", array[k]);
@@ -15,7 +15,7 @@ int main(){
   const int SIZE =6; //Declare array size as constant.
   int scores[SIZE] = {30,50,85,90,80,100};
   printf("scores = ");
-  print_array(scores,SIZE);
+  display(scores,SIZE);
 
   //Sort data
   for(int i = 0; i < SIZE - 1; i++){
@@ -28,7 +28,7 @@ int main(){
     }
   }
   printf("results = " );
-  print_array(scores,SIZE);
+  display(scores,SIZE);
 
 
   //Output of data
